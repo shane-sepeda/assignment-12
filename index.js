@@ -32,4 +32,10 @@ const add_emp = () {
     const view_department=`INSERT INTO roles`
 };
 
+updateRole = (employee_name, newRole, emp_id, newRole_id) => {
+
+initializeApp = () => {
+    console.log("Employee Tracker");
+    menuOptions();
+}
 initializeApp();
