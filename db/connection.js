@@ -6,8 +6,11 @@ const db = mysql.createConnection(
         host: "localhost",
         user: process.env.user,
         password: process.env.password,
-        database: "tracker"
+        database: "employee tracker"
     },
-);
+    );
 
+    db.connect(function(err) {
+        if (err) throw err;});
+    
 module.exports = db;
